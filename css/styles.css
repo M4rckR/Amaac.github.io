@@ -10,6 +10,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -22,6 +23,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    position: relative;
+    z-index: 10;
+    
 }
 
 a {
@@ -76,12 +80,25 @@ iframe {
     width: 90%;
 }
 
+.header {
+    padding: .1px;
+}
+
 .navegacion__img {
     width: 15rem;
 }
 
 .header__contenedor {
     background-color: #F5F5F5;
+}
+
+@media (min-width:1024px ){
+    .header__contenedor {
+        width: 100%;
+        position: fixed;
+        height: 10rem;
+        z-index: 20;
+    }
 }
 
 .navegacion__img {
@@ -128,6 +145,12 @@ iframe {
 .navegacion__link:hover {
     overflow: hidden;
     text-shadow: .25px .25px black;
+}
+
+@media (min-width:1024px ){
+    .hero {
+        margin-top: 9.83rem;
+    }
 }
 
 .hero__tittle {
@@ -260,6 +283,10 @@ iframe {
     margin-top: 5rem;
 }
 
+.pilares {
+    padding-top: 10rem;
+}
+
 .pilar {
     border: 10px solid rgb(235, 232, 232);
     margin-bottom: 2rem;
@@ -279,7 +306,7 @@ iframe {
 }
 
 .pilar__img {
-    width: 25rem;
+    width: 15rem;
     margin: 0 auto;
 }
 
@@ -309,6 +336,7 @@ iframe {
 /* quienes somos */
 
 .somos {
+    padding-top: 10rem;
     margin-top: 10rem;
 }
 
@@ -372,6 +400,7 @@ iframe {
 /* productos */
 
 .productos {
+    padding-top: 10rem;
     margin-top: 10rem;
 }
 
@@ -413,6 +442,7 @@ iframe {
 /* servicios */
 
 .servicios {
+    padding-top: 10rem;
     margin-top: 10rem;
 }
 
@@ -437,7 +467,7 @@ iframe {
 
 .contacto {
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .contacto__contenedor {
