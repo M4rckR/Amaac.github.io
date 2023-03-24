@@ -425,7 +425,6 @@ iframe {
     padding: 2rem;
     background-color: rgba(128, 128, 128, 0.541);
     border-radius: 2rem;
-    height: 20rem;
     transition: all .3s;
 }
 
