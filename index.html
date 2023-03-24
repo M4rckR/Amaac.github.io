@@ -166,9 +166,9 @@
             </div>
         </section>
 
-        <section id="contactanos" class="contacto contenedor">
+        <section id="contactanos" class="contacto ">
             <h2 class="yellow text-center">Sientete libre de <span class="green">contactarnos</span></h2>
-            <div class="contacto__contenedor">
+            <div class="contacto__contenedor contenedor">
                 <div class="contacto__mapa">
                     <iframe class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d290.1237482835568!2d-77.08604980093853!3d-11.945096591187644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d10b9533475b%3A0x30a4bced46bd1ab1!2sAMAAC%20PER%C3%9A!5e0!3m2!1ses!2spe!4v1675808266541!5m2!1ses!2spe" 
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -177,22 +177,22 @@
                 <form  id="form"  name="form"  method="post" class="contacto__formulario">
                     <div class="contacto__entrada">
                         <label class="contacto__label" for="nombre">Nombre</label>
-                        <input class="contacto__input" type="text" name="nombre" required>
+                        <input id="nombre" class="contacto__input" type="text" name="nombre" required>
                     </div>
 
                     <div class="contacto__entrada">
                         <label class="contacto__label" for="apellido">Apellido</label>
-                        <input class="contacto__input" type="text" name="apellido" required>
+                        <input id="apellido" class="contacto__input" type="text" name="apellido" required>
                     </div>
 
                     <div class="contacto__entrada">
                         <label class="contacto__label" for="correo">Correo</label>
-                        <input class="contacto__input" type="email" name="correo" required>
+                        <input id="correo" class="contacto__input" type="email" name="correo" required>
                     </div>
 
                     <div class="contacto__entrada">
                         <label class="contacto__label" for="mensaje">Mensaje</label>
-                        <input class="contacto__input" type="text" name="mensaje" required>
+                        <input id="mensaje" class="contacto__input" type="text" name="mensaje" required>
                     </div>
 
                     <button id="button" class="contacto__enviar" type="submit">Enviar</button>

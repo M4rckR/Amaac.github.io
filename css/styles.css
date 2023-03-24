@@ -82,6 +82,7 @@ iframe {
 
 .header {
     padding: .1px;
+    
 }
 
 .navegacion__img {
@@ -147,9 +148,15 @@ iframe {
     text-shadow: .25px .25px black;
 }
 
+
+
 @media (min-width:1024px ){
     .hero {
         margin-top: 9.83rem;
+        background-image: url(../assets/icons2/PRINCIPALES/4Principal.png);
+        background-repeat: no-repeat;
+        background-size: 10rem 50rem;
+        background-position: 15rem 10rem;
     }
 }
 
@@ -338,6 +345,16 @@ iframe {
 .somos {
     padding-top: 10rem;
     margin-top: 10rem;
+    background-image: url(../assets/icons/circupuntos.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 25rem;
+}
+
+@media (min-width:1024px ){
+    .somos {
+        background-position: right top;
+    }
 }
 
 .mision__img, 
@@ -402,6 +419,22 @@ iframe {
 .productos {
     padding-top: 10rem;
     margin-top: 10rem;
+    position: relative;
+}
+
+.productos::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    top: 0;
+    left: 10%;
+    transform: translateX(-10%);
+    background-image: url(../assets/icons2/PRINCIPALES/5BPricipal.png), url(../assets/icons2/PRINCIPALES/7Pricipal.png);
+    background-repeat: no-repeat;
+    background-size: 25rem, 6rem 6rem;
+    background-position: top, right top;
 }
 
 .productos__contenedor {
@@ -465,9 +498,40 @@ iframe {
 /* contacto */
 
 .contacto {
+    padding-top: 10rem;
     margin-top: 10rem;
     margin-bottom: 5rem;
+    position: relative;
+    background-image: url(../assets/icons/circupuntos.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25rem;
 }
+
+@media (min-width:1024px ){
+    .contacto {
+        background-position: right top;
+        background-size: auto;
+    }
+}
+
+
+@media (min-width:1530px ){
+    .contacto::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10%;
+        height: 30rem;
+        top: 40%;
+        left: 0;
+        background-image: url(../assets/icons2/PRINCIPALES/FINAL/2Final.png), url(../assets/icons2/PRINCIPALES/FINAL/1Final.png);
+        background-position: left center, left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
 
 .contacto__contenedor {
     display: flex;
@@ -492,6 +556,7 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    background-color: white;
 }
 
 .contacto__label {
@@ -521,4 +586,23 @@ iframe {
 
 .contacto__input {
     width: 100%;
+}
+
+.contacto__formulario {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10rem;
+}
+
+.contacto__formulario::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 10rem;
+    top: 0;
+    left: 0;
+    border-radius: 1rem 1rem 0 0;
+    background-image: url(../assets/icons2/PRINCIPALES/FINAL/3Final.png);
+    background-size: cover; 
 }
